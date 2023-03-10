@@ -1,0 +1,174 @@
+Var
+a
+,
+b
+,
+c
+,
+d
+;
+endline
+endline
+a
+:=
+8
+;
+endline
+b
+:=
+9
+;
+endline
+c
+:=
+5
+;
+endline
+d
+:=
+4
+;
+endline
+endline
+IF
+(
+a
+>
+5
+)
+THEN
+endline
+Begin
+endline
+d
+:=
+d
+/
+2
+;
+endline
+c
+:=
+b
++
+d
+;
+endline
+End
+endline
+ELSE
+endline
+b
+:=
+b
+-
+a
+*
+3
+;
+endline
+endline
+a
+:=
+0
+;
+endline
+b
+:=
+0
+;
+endline
+c
+:=
+0
+;
+endline
+d
+:=
+0
+;
+endline
+endline
++----[Program_Body](NULL)
+                                                  +----[Identifier](0)
+                                             +----[Operator](:=)
+                                                  +----[Identifier](d)
+                                        +----[Operators](NULL)
+                                                  +----[Identifier](0)
+                                             +----[Operator](:=)
+                                                  +----[Identifier](c)
+                                   +----[Operators](NULL)
+                                             +----[Identifier](0)
+                                        +----[Operator](:=)
+                                             +----[Identifier](b)
+                              +----[Operators](NULL)
+                                        +----[Identifier](0)
+                                   +----[Operator](:=)
+                                        +----[Identifier](a)
+                         +----[Operators](NULL)
+                                                       +----[Identifier](3)
+                                                  +----[Expression](*)
+                                                       +----[Identifier](a)
+                                             +----[Expression](-)
+                                                  +----[Identifier](b)
+                                        +----[Operator](:=)
+                                             +----[Identifier](b)
+                                   +----[Condition_Expression](NULL)
+                                        +----[Operators](NULL)
+                                                            +----[Identifier](d)
+                                                       +----[Expression](+)
+                                                            +----[Identifier](b)
+                                                  +----[Operator](:=)
+                                                       +----[Identifier](c)
+                                             +----[Operators](NULL)
+                                                            +----[Identifier](2)
+                                                       +----[Expression](/)
+                                                            +----[Identifier](d)
+                                                  +----[Operator](:=)
+                                                       +----[Identifier](d)
+                              +----[If_Else](NULL)
+                                        +----[Identifier](5)
+                                   +----[Expression](>)
+                                        +----[Identifier](a)
+                    +----[Operators](NULL)
+                              +----[Identifier](4)
+                         +----[Operator](:=)
+                              +----[Identifier](d)
+               +----[Operators](NULL)
+                         +----[Identifier](5)
+                    +----[Operator](:=)
+                         +----[Identifier](c)
+          +----[Operators](NULL)
+                    +----[Identifier](9)
+               +----[Operator](:=)
+                    +----[Identifier](b)
+     +----[Operators](NULL)
+               +----[Identifier](8)
+          +----[Operator](:=)
+               +----[Identifier](a)
+[Root](NULL)
+                    +----[Variables](d)
+               +----[Variables](c)
+          +----[Variables](b)
+     +----[Variables](a)
++----[Variables_Declaration](NULL)
+a := 8
+b := 9
+c := 5
+d := 4
+tmp_0 = a > 5
+cmp_true tmp_0 label_0
+tmp_1 = d / 2
+d := tmp_1
+tmp_2 = b + d
+c := tmp_2
+goto label_1
+label_0:
+tmp_4 = a * 3
+tmp_3 = b - tmp_4
+b := tmp_3
+label_1:
+a := 0
+b := 0
+c := 0
+d := 0
